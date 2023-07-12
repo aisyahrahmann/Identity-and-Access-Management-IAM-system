@@ -1,127 +1,3 @@
-// import MenuOpenIcon from '@mui/icons-material/MenuOpen';
-// import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
-// import NotificationsIcon from '@mui/icons-material/Notifications';
-// import Nav from 'react-bootstrap/Nav';
-// import { default as BootstrapNavbar } from 'react-bootstrap/Navbar';
-// import Badge from 'react-bootstrap/Badge';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
-// import {getUser, resetUserSession}from '../service/AuthService'
-
-// function Navbar({ isOpen, setIsOpen,props }) {
-// 	const user=getUser();
-// 	const name = user !== 'undefined' && user? user.name:'';
-	
-// 	const logoutHandler=()=>{
-// 		resetUserSession();
-// 		props.history.push('/');
-// 	}
-
-// 	return (
-// 		<BootstrapNavbar
-// 			collapseOnSelect
-// 			expand="md"
-// 			bg="light"
-// 			variant="light"
-// 			sticky="top"
-// 			className="mb-3 w-100 "
-// 		>
-// 			<BootstrapNavbar.Brand className="d-flex align-items-center justify-content-center">
-// 				<Nav.Link>
-// 					<MenuOpenIcon fontSize="large" onClick={() => setIsOpen((s) => !s)} />
-// 				</Nav.Link>
-// 				<span className="mx-3 text-muted d-none d-md-inline">Hello {name} !</span>
-// 				<span className="text-muted d-none d-md-inline">
-// 					{/* {moment().format('MMMM Do YYYY, h:mm a')} */}
-// 				</span>
-// 			</BootstrapNavbar.Brand>
-
-// 			<BootstrapNavbar.Toggle aria-controls="responsive-BootstrapNavbar-nav" />
-// 			<BootstrapNavbar.Collapse id="responsive-BootstrapNavbar-nav">
-// 				<Nav className="ms-auto">
-// 					<Nav.Link>
-// 						<HelpOutlineOutlinedIcon />
-// 					</Nav.Link>
-// 					<Nav.Link className="position-relative">
-// 						<NotificationsIcon />
-// 						<Badge
-// 							pill
-// 							bg="danger"
-// 							className="position-absolute top-0 end-md-0"
-// 						>
-// 							5
-// 						</Badge>
-// 					</Nav.Link>
-// 					<NavDropdown title={name} id="Admin-nav-dropdown">
-// 						<NavDropdown.Item><input type="button" value="Logout" onClick={logoutHandler} /></NavDropdown.Item>
-// 					</NavDropdown>
-// 				</Nav>
-// 			</BootstrapNavbar.Collapse>
-// 		</BootstrapNavbar>
-// 	);
-// }
-
-// export default Navbar;
-
-// import MenuOpenIcon from '@mui/icons-material/MenuOpen';
-// import Nav from 'react-bootstrap/Nav';
-// import { default as BootstrapNavbar } from 'react-bootstrap/Navbar';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
-// import { getUser, resetUserSession } from '../service/AuthService';
-// import { useNavigate } from 'react-router-dom';
-
-// function Navbar({ isOpen, setIsOpen }) {
-//   const user = getUser();
-//   const name = user && user.name;
-
-//   const navigate = useNavigate();
-
-//   const logoutHandler = () => {
-//     resetUserSession();
-//     navigate('/');
-//   };
-
-//   const resetPassword = () =>{
-
-//   };
-
-//   return (
-//     <BootstrapNavbar
-//       collapseOnSelect
-//       expand="md"
-//       bg="light"
-//       variant="light"
-//       sticky="top"
-//       className="mb-3 w-100 "
-//     >
-//       <BootstrapNavbar.Brand className="d-flex align-items-center justify-content-center">
-//         <Nav.Link>
-//           <MenuOpenIcon fontSize="large" onClick={() => setIsOpen((s) => !s)} />
-//         </Nav.Link>
-//         <span className="mx-3 text-muted d-none d-md-inline">Hello {name} !</span>
-//         <span className="text-muted d-none d-md-inline">
-//           {/* {moment().format('MMMM Do YYYY, h:mm a')} */}
-//         </span>
-//       </BootstrapNavbar.Brand>
-
-//       <BootstrapNavbar.Toggle aria-controls="responsive-BootstrapNavbar-nav" />
-//       <BootstrapNavbar.Collapse id="responsive-BootstrapNavbar-nav">
-//         <Nav className="ms-auto">
-//           <NavDropdown title={name} id="Admin-nav-dropdown">
-//             <NavDropdown.Item>
-//               <input type="button" value="Logout" className="btn btn-danger" onClick={logoutHandler} />
-//             </NavDropdown.Item>
-//             <NavDropdown.Item>
-//               <input type="button" value="Reset Password" className="btn btn-warning" onClick={resetPassword} />
-//             </NavDropdown.Item>
-//           </NavDropdown>
-//         </Nav>
-//       </BootstrapNavbar.Collapse>
-//     </BootstrapNavbar>
-//   );
-// }
-
-// export default Navbar;
-
 
 import React, { useState } from 'react';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
@@ -248,18 +124,10 @@ const Navbar = ({ isOpen, setIsOpen }) => {
     console.log("accesskey", accessVariable)
     console.log("keyid",secretVariable)
     
-    // {
-    //   data: {
-    //     username: selectedUser,
-    //   },
-    //   headers: {
-    //     'x-api-key': 'hgy7XNweFw5F3cu28m2048PjpgdfSlJI1kOle6im',
-    //   },
-    // }
 
     axios.put(updateAPIurl, requestBody, {
       headers: {
-        'x-api-key': 'hgy7XNweFw5F3cu28m2048PjpgdfSlJI1kOle6im'
+        'x-api-key': 'YOUR_API_KEY'
       }
     })
 
