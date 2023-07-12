@@ -469,8 +469,8 @@ import {
   ListGroupsCommand,
 } from '@aws-sdk/client-iam';
 
-const accessKeyId = 'AKIA5SFSGTHHY56JRHWV';
-const secretAccessKey = 'knOSZ3ldNK/5a9e8/nsaZTmgBM9Cqtk7DXnZu78B';
+const accessKeyId = 'YOUR_ACCESS_KEY';
+const secretAccessKey = 'YOUR_SECRET_ACCESS_KEY';
 const region = 'us-east-1'; // Replace with your desired AWS region
 
 const deleteAPIurl = 'https://lopzszq3r3.execute-api.us-east-1.amazonaws.com/prod/delete';
@@ -609,14 +609,10 @@ const ListIAMUsers = () => {
             username: selectedUser,
           },
           headers: {
-            'x-api-key': 'hgy7XNweFw5F3cu28m2048PjpgdfSlJI1kOle6im',
+            'x-api-key': 'YOUR_API_KEY',
           },
         })
-        // .delete(deleteAPIurl, requestBody, {
-        //   headers: {
-        //     'x-api-key': 'hgy7XNweFw5F3cu28m2048PjpgdfSlJI1kOle6im',
-        //   },
-        // })
+     
         .then((response) => {
           console.log('User data stored in the database:', response.data);
         })
