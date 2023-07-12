@@ -25,7 +25,7 @@ const Login = () => {
     setErrorMessage(null);
     const requestConfig = {
       headers: {
-        "x-api-key": "hgy7XNweFw5F3cu28m2048PjpgdfSlJI1kOle6im",
+        "x-api-key": "YOUR_API_KEY",
       },
     };
 
