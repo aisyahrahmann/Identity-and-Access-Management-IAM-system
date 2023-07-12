@@ -1,8 +1,8 @@
 import { IAMClient, GetUserCommand,CreateUserCommand ,
   CreateAccessKeyCommand, AttachGroupPolicyCommand, DetachGroupPolicyCommand} from '@aws-sdk/client-iam';
 
-const accessKeyId = "AKIA5SFSGTHHY56JRHWV";
-const secretAccessKey = "knOSZ3ldNK/5a9e8/nsaZTmgBM9Cqtk7DXnZu78B";
+const accessKeyId = "YOUR_ACCESS_KEY";
+const secretAccessKey = "YOUR_SECRET_ACCESS_KEY";
 const region = "us-east-1"; // Replace with your desired AWS region
 
 const iamClient = new IAMClient({
