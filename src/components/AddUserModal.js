@@ -24,8 +24,8 @@ const AddUserModal = ({ handleClose, show, setUsers }) => {
         const iamClient = new IAMClient({
           region: 'us-east-1', // Replace with your desired AWS region
           credentials: {
-            accessKeyId: "AKIA5SFSGTHHY56JRHWV",
-            secretAccessKey: "knOSZ3ldNK/5a9e8/nsaZTmgBM9Cqtk7DXnZu78B",
+            accessKeyId: 'YOUR_ACCESS_KEY',
+    secretAccessKey: 'YOUR_SECRET_ACCESS_KEY',
           },
         });
 
@@ -51,8 +51,8 @@ const AddUserModal = ({ handleClose, show, setUsers }) => {
       const iamClient = new IAMClient({
         region: 'us-east-1', // Replace with your desired AWS region
         credentials: {
-          accessKeyId: "AKIA5SFSGTHHY56JRHWV",
-          secretAccessKey: "knOSZ3ldNK/5a9e8/nsaZTmgBM9Cqtk7DXnZu78B",
+          accessKeyId: 'YOUR_ACCESS_KEY',
+    secretAccessKey: 'YOUR_SECRET_ACCESS_KEY',
         },
       });
 
@@ -112,27 +112,9 @@ const AddUserModal = ({ handleClose, show, setUsers }) => {
           secretAccessKey: secretVariable
         };
 
-        // const requestConfig = {
-        //   headers: {
-        //     'x-api-key': 'hgy7XNweFw5F3cu28m2048PjpgdfSlJI1kOle6im'
-        //   }
-        // }
-        
-        // axios.post(registerUrl, requestBody, requestConfig)
-        //   .then(response => {
-        //     setMessage('Registration Successful');
-        //   })
-        //   .catch(error => {
-        //     if (error.response.status === 401) {
-        //       setMessage(error.response.data.message);
-        //     } else {
-        //       setMessage('Sorry, the backend server is down! Please try again later.');
-        //     }
-        //   });
-
         axios.post(registerUrl, requestBody, {
           headers: {
-            'x-api-key': 'hgy7XNweFw5F3cu28m2048PjpgdfSlJI1kOle6im'
+            'x-api-key': 'YOUR_API_KEY'
           }
         })
 
@@ -158,8 +140,8 @@ const AddUserModal = ({ handleClose, show, setUsers }) => {
       const iamClient = new IAMClient({
         region: 'us-east-1', // Replace with your desired AWS region
         credentials: {
-          accessKeyId: "AKIA5SFSGTHHY56JRHWV",
-          secretAccessKey: "knOSZ3ldNK/5a9e8/nsaZTmgBM9Cqtk7DXnZu78B",
+          accessKeyId: 'YOUR_ACCESS_KEY',
+    secretAccessKey: 'YOUR_SECRET_ACCESS_KEY',
         },
       });
 
