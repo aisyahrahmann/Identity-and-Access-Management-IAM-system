@@ -1,0 +1,95 @@
+.list-iam-users-container {
+    position: relative;
+  }
+  
+  .delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .delete-toast-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9998;
+  }
+  
+  .delete-toast {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+/* DeleteUser.css */
+
+/* Styles for the assign user form */
+.assign-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px; /* Increase the width by 50% */
+  height: 300px; /* Increase the height by 50% */
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.assign-form-select-container {
+  flex: 1; /* Allow the container to expand and take remaining vertical space */
+  overflow-y: auto; /* Add overflow-y property to enable vertical scrolling */
+}
+
+.assign-form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto; /* Add margin-top: auto to push buttons to the bottom */
+  margin-bottom: 10px; /* Add margin-bottom for spacing between buttons and form */
+}
+
+.assign-form-buttons button {
+  margin-left: 10px;
+}
+
+/* Styles for the overlay */
+.assign-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity value as desired */
+  backdrop-filter: blur(4px); /* Add a backdrop filter for blur effect */
+  z-index: 9998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.assign-form-message {
+  margin-top: 60px;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #000;
+}
+
+
