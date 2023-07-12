@@ -21,8 +21,8 @@ const AssignUserToGroup = () => {
       const iamClient = new IAMClient({
         region: 'us-east-1', // Replace with your desired AWS region
         credentials: {
-          accessKeyId: "AKIA5SFSGTHHY56JRHWV",
-          secretAccessKey: "knOSZ3ldNK/5a9e8/nsaZTmgBM9Cqtk7DXnZu78B",
+          accessKeyId: 'YOUR_ACCESS_KEY',
+    secretAccessKey: 'YOUR_SECRET_ACCESS_KEY',
         },
       });
 
@@ -43,8 +43,8 @@ const AssignUserToGroup = () => {
         const iamClient = new IAMClient({
           region: 'us-east-1', // Replace with your desired AWS region
           credentials: {
-            accessKeyId: "AKIA5SFSGTHHY56JRHWV",
-            secretAccessKey: "knOSZ3ldNK/5a9e8/nsaZTmgBM9Cqtk7DXnZu78B",
+           accessKeyId: 'YOUR_ACCESS_KEY',
+    secretAccessKey: 'YOUR_SECRET_ACCESS_KEY',
           },
         });
 
