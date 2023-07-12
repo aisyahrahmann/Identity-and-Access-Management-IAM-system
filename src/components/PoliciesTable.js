@@ -12,8 +12,8 @@ const PoliciesTable = () => {
   useEffect(() => {
     const fetchPolicies = async () => {
       try {
-        const accessKeyId = 'AKIA5SFSGTHHY56JRHWV';
-        const secretAccessKey = 'knOSZ3ldNK/5a9e8/nsaZTmgBM9Cqtk7DXnZu78B';
+        const accessKeyId = 'YOUR_ACCESS_KEY';
+        const secretAccessKey = 'YOUR_SECRET_ACCESS_KEY';
         const region = 'us-east-1'; // Replace with your desired AWS region
 
         // Initialize IAM client with the provided credentials
