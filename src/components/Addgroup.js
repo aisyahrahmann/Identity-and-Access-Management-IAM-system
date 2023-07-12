@@ -18,8 +18,8 @@ const AddGroup = ({ handleClose, show, setUsers }) => {
       const client = new IAMClient({
         region: 'us-east-1', // Update with your desired region
         credentials: {
-          accessKeyId: "AKIA5SFSGTHHY56JRHWV",
-          secretAccessKey: "knOSZ3ldNK/5a9e8/nsaZTmgBM9Cqtk7DXnZu78B",
+          accessKeyId: 'YOUR_ACCESS_KEY',
+    secretAccessKey: 'YOUR_SECRET_ACCESS_KEY',
       }
       });
 
@@ -52,8 +52,8 @@ const AddGroup = ({ handleClose, show, setUsers }) => {
       const client = new IAMClient({
         region: 'us-east-1', // Update with your desired region
         credentials: {
-          accessKeyId: "AKIA5SFSGTHHY56JRHWV",
-          secretAccessKey: "knOSZ3ldNK/5a9e8/nsaZTmgBM9Cqtk7DXnZu78B",
+          accessKeyId: 'YOUR_ACCESS_KEY',
+    secretAccessKey: 'YOUR_SECRET_ACCESS_KEY',
       }
       });
 
