@@ -11,6 +11,9 @@ Screenshot of the website:
 ![Screenshot 2023-07-12 220204 (2)](https://github.com/aisyahrahmann/Identity-and-Access-Management-IAM-system/assets/74453603/80acbf5f-3e24-4338-9d54-7916047179c8)
 
 
+![Screenshot 2023-07-05 080556](https://github.com/aisyahrahmann/Identity-and-Access-Management-IAM-system/assets/74453603/091f2fac-db54-432d-8a0f-05ed76e64053)
+
+
 ![Screenshot 2023-07-12 220224 (2)](https://github.com/aisyahrahmann/Identity-and-Access-Management-IAM-system/assets/74453603/41be97aa-9105-417c-9b18-5a609a25ce85)
 
 
